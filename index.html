@@ -456,12 +456,12 @@
                 const item = document.createElement('div');
                 item.className = 'gallery-item';
                 item.innerHTML = `
-                    <img src="/images/${i}.jpg" alt="Valentine Memory ${i}">
+                    <img src="images/${i}.jpg" alt="Valentine Memory ${i}">
                     <div class="heart-icon"></div>
                 `;
                 
                 item.addEventListener('click', () => {
-                    modalImage.src = `/images/${i}.jpg`;
+                    modalImage.src = `images/${i}.jpg`;
                     modalCaption.textContent = captions[i-1] || 'Our special moment';
                     modal.classList.add('active');
                 });
